@@ -26,9 +26,6 @@ var starsDiv = document.getElementsByClassName('estrelas')[0];
 var stars = starsDiv.getElementsByTagName('img');
 
 var checkStars = function(indexClicked) {
-  if (indexClicked < 0) {
-    return;
-  }
   Array.prototype.slice.call(stars).forEach(function(star, index) {
     star.src = index <= indexClicked ? CHECK : UNCHECK;
   });
