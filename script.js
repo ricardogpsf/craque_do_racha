@@ -40,13 +40,9 @@ var configureStars = function() {
 }
 
 var changeMemberTo = function(who) {
-  if ( (currentMemberIdx >= TEMP_DATA.size - 1) && currentMemberIdx <= 0 ) {
-    return;
-  }
-
-  if (who === 'next') {
+  if (who === 'next' && currentMemberIdx < TEMP_DATA.length - 1) {
     currentMemberIdx++;
-  } else {
+  } else if (who === 'previous' && currentMemberIdx > 0){
     currentMemberIdx--;
   }
 
