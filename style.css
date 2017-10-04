@@ -8,7 +8,6 @@ h2 {
 
 .estrelas {
   text-align: center;
-  cursor: pointer;
 }
 
 .text-muted {
@@ -17,4 +16,8 @@ h2 {
 
 .hide {
   display: none;
+}
+
+.clickable {
+  cursor: pointer;
 }
