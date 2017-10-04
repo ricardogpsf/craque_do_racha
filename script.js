@@ -19,8 +19,8 @@ var TEMP_DATA = [
 ];
 
 var currentMemberIdx = -1;
-var CHECK = "/images/estrela_cheia.png";
-var UNCHECK = "/images/estrela_vazia.png";
+var CHECK = document.baseURI + "images/estrela_cheia.png";
+var UNCHECK = document.baseURI + "images/estrela_vazia.png";
 
 var starsDiv = document.getElementsByClassName('estrelas')[0];
 var stars = starsDiv.getElementsByTagName('img');
