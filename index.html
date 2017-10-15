@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h2>Racha da Paz</h2>
+  <h2 id="title-text"></h2>
   <hr>
   <div class="container-fluid">
     <div class="row">
@@ -30,5 +30,18 @@
   </div>
 </body>
 
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCi9A6vZQ9MA8dgDsnIsMuCRerXvhSxQMg",
+    authDomain: "craque-do-racha.firebaseapp.com",
+    databaseURL: "https://craque-do-racha.firebaseio.com",
+    projectId: "craque-do-racha",
+    storageBucket: "craque-do-racha.appspot.com",
+    messagingSenderId: "977770416042"
+  };
+  firebase.initializeApp(config);
+</script>
 <script type="text/javascript" src="script.js"></script>
 </html>
