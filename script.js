@@ -29,7 +29,7 @@ var DB = (function() {
   var loadPoolings = function() {
     var uri = 'pollings/' + game.id + "-" + currentUserId;
     remoteDB.child(uri).once("value", function(snapshot) {
-      pollings = snapshot.toJSON();
+      pollings = snapshot.toJSON() || [];
       done = true;
     });
   }
